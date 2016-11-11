@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					1D0F251E1DCCB7B5005C25AE = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = M2S6NN7DP8;
+						DevelopmentTeam = Z42544JE23;
 					};
 					1D0F25371DCCB7B5005C25AE = {
 						CreatedOnToolsVersion = 7.3;
@@ -416,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z42544JE23;
 				INFOPLIST_FILE = TableView_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ios.TableView-test";
@@ -427,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z42544JE23;
 				INFOPLIST_FILE = TableView_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ios.TableView-test";

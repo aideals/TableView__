@@ -21,7 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    //----- changed ---
+    [self initData];
+    // -------------
     tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -66,6 +68,12 @@
     
 }
 
+ //----- changed ---
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+ //----- ---- ---
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell;
@@ -74,7 +82,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
     }
 
-    Contact *contact;
+     //----- changed ---
+    ContactsGrouped *group = contacts[indexPath.section];
+    Contact *contact = group.contacts[indexPath.row];
+     //----- ------ ---
+    
     cell.textLabel.text = [contact getName];
     cell.detailTextLabel.text = contact.phoneNumber;
     
